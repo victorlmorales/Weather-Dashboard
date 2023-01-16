@@ -1,9 +1,114 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    font-size: 20px;
 }
 
 header {
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    height: 50%;
+    font-size: 4rem;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 20%, rgba(255,0,0,1) 100%);
+    color: white;
+    text-align: center;
+}
+
+#primary-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0.5rem;
+}
+
+/* input and submit button */
+.form-label {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-left: 0.5rem;
+}
+
+/* form and cities previously viewed cities */
+.btn {
+    width: 100%;
+}
+
+.btn-primary{
+    --bs-btn-bg: #dc3545;
+    --bs-btn-border-color: #141619;
+    --bs-btn-hover-bg: #dc3545;
+    --bs-btn-active-bg: #dc3545;
+}
+
+#line {
+    width: 94%;
+    margin:0 auto;
+    display: none;
+}
+
+#search-history {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+#search-results {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.search {
+    background-color: #767676;
+    color: #ffffff;
+    border-radius: .5em;
+    padding: .5em 1em;
+    font-size: 17.5px;
+}
+
+button {
+    margin: .5rem;
+}
+
+.holder {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* current weather and 5-day forecast */
+#weather-section {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding-right: 0.5rem;
+}
+
+#current-weather {
+    display: none;
+    border: 2px solid black;
+    height: fit-content;
+    padding: 1rem;
+}
+
+#forecast-container {
+    display: none;
+    padding-top: 1rem;
+}
+
+#forecast-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.col-2 {
+    background-color: #898989;
+    color: #F2F2F2;
+    border: #F2F2F2 2px solid;
+    text-align: center;
+    width: 17.5%;
+    padding: 0.5rem;
+    margin: .5rem;
 }
